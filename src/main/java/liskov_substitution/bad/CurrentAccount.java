@@ -2,14 +2,14 @@ package liskov_substitution.bad;
 
 import java.math.BigDecimal;
 
-public class CurrentAccount extends Account {
+public class CurrentAccount implements WithdrawalAccount {
     @Override
-    protected void deposit(BigDecimal amount) {
+    public void deposit(BigDecimal amount) {
         // Deposit into CurrentAccount
     }
 
     @Override
-    protected void withdraw(BigDecimal amount) {
+    public void withdraw(BigDecimal amount) {
         // Withdraw from CurrentAccount
     }
 }

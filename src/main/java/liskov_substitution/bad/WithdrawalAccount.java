@@ -2,8 +2,8 @@ package liskov_substitution.bad;
 
 import java.math.BigDecimal;
 
-public abstract class Account {
-    protected abstract void deposit(BigDecimal amount);
+public interface WithdrawalAccount {
+    void deposit(BigDecimal amount);
 
     /**
      * Reduces the account balance by the specified amount
@@ -12,6 +12,6 @@ public abstract class Account {
      *
      * @param amount
      */
-    protected abstract void withdraw(BigDecimal amount);
+    void withdraw(BigDecimal amount);
 
 }
