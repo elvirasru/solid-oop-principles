@@ -1,4 +1,4 @@
-package open_closed.exercise_1.bad;
+package open_closed.exercise_1.bad.shape;
 
 public class Rectangle extends Shape {
     private final double width;
@@ -15,5 +15,10 @@ public class Rectangle extends Shape {
 
     public double getWidth() {
         return width;
+    }
+
+    @Override
+    public double calculateArea() {
+        return width * length;
     }
 }

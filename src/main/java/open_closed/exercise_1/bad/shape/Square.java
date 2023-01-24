@@ -1,4 +1,6 @@
-package open_closed.exercise_1.bad;
+package open_closed.exercise_1.bad.shape;
+
+import static java.lang.Math.pow;
 
 public class Square extends Shape {
     private final double side;
@@ -9,5 +11,10 @@ public class Square extends Shape {
 
     public double getSide() {
         return side;
+    }
+
+    @Override
+    public double calculateArea() {
+        return pow(side, 2);
     }
 }
